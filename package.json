@@ -1,0 +1,24 @@
+{
+  "name": "freetypingapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @typing/web dev",
+    "build": "pnpm --filter @typing/web build",
+    "preview": "pnpm --filter @typing/web preview",
+    "typecheck": "pnpm --filter @typing/web exec tsc -b",
+    "test": "pnpm --filter @typing/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/typing.git"
+  }
+}
