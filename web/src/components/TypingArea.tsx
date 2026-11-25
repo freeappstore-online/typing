@@ -99,7 +99,7 @@ export default function TypingArea({
             }}
             className={isCursor ? (settings.smoothCaret ? "cursor-smooth" : "cursor-blink") : ""}
           >
-            {c.char === " " ? " " : c.char}
+            {c.char}
           </span>
         );
       })}
